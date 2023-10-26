@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Etch-A-Sketch</title>
+</head>
+<body>
+
+    <div class="body">
+        <div class="flex-container">
+            <div class="title">
+                <h1>SketchPad</h1>
+            </div>
+            <div class="color-divs">
+                <div >Current Color: </div>
+                <div id="current-color">COLOR</div>
+            </div>
+        </div>
+    
+        <div class="content">
+            <div class="right-content">
+                <div class="buttons-container">
+                    <div class="button-options">
+                        <button onclick="paintColor('#282828')">BLACK</button>
+                        <button onclick="paintColor('red')">RED</button>
+                        <button onclick="paintColor('blue')">BLUE</button>
+                        <button onclick="paintColor('yellow')">YELLOW</button>
+                        <button onclick="paintColor('green')">GREEN</button>
+                        <button onclick="paintColor('white')">WHITE</button>
+                        <button onclick="paintColor('rainbow')">RAINBOW</button>
+                        <button onclick="clearScreen()">CLEAR</button>
+                    </div>
+                </div>
+            
+                <div>
+                    <input
+                        type="text"
+                        placeholder="Enter number of bits in canvas"
+                        value="16"
+                        onchange="changeSize(this.value)"
+                        />
+            
+                    <button>Set Size</button>
+                </div>
+            </div>
+        
+            <div class="left-content">
+                <div class="grid-container"></div>
+            </div>
+        </div>
+    </div>
+
+    
+
+</body>
+<script src="script.js"></script>
+</html>

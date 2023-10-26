@@ -1,0 +1,58 @@
+.grid-container {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    border-width: 5px;
+    border-color: black;
+}
+
+body {
+    color: white;
+    background-color: #282828;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+}
+
+.content {
+    display: flex;
+    gap: 50px;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.color-divs {
+    display: flex;
+}
+
+
+.buttons-container {
+    display: flex;
+}
+
+.button-options {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 71.5px;
+}
